@@ -9,6 +9,12 @@ export type CostFun = (action: AlignAction, target: Event) => number;
 
 export type Alignment = { cost: number; trace: Trace };
 
+export type Test = {
+  polarity: "+" | "-",
+  trace: Trace,
+  context: Set<Event>
+}
+
 // -----------------------------------------------------------
 // --------------------- DCR Graph Types ---------------------
 // -----------------------------------------------------------
